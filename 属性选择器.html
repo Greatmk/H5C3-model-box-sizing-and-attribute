@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		li[class]{
+			background-color: red;
+		}
+		/* 选择所有的具备这个‘属性 = 对应值’的E元素 */
+		/* li[class='box']{
+			background-color: green;
+		} */
+
+		/* 选择所有的包含这个‘属性 = 对应值’的E元素 */
+
+		/* li[class~='box']{
+			background-color: green;
+		} */
+
+		/* li[class|='box']{
+			background-color: pink;
+		} */
+
+		/* 从头去匹配这个‘属性 = 对应值’的li元素 */
+		/* li[class^='bo']{
+			background-color: green;
+		} */
+		/* 从尾去匹配这个‘属性 = 对应值’的li元素 */
+		/* li[class$='de']{
+			background-color: yellowgreen;
+		} */
+		/* 从任意位置去匹配这个‘属性 = 对应值’的Li元素 */
+		li[class*='box']{
+			background-color: yellowgreen;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li class="fdbox3">3</li>
+		<li>4</li>
+		<li class="slboxide">5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+	</ul>
+</body>
+</html>

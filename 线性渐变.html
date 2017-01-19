@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #000;
+			margin: 10px auto;
+			/* 线性渐变 
+
+				语法：background:linear-gradient(起始位置,颜色一 位置,颜色二 位置 ,颜色三 位置);
+
+				（1）需要添加私有前缀 
+				（2）第一个参数，起始位置  可以接受方位名词 也可以是一个点
+					也可以是deg 角度  控制的是渐变线的角度 正值是逆时针，负值是顺时针
+				（3）颜色 可以是任意颜色 
+
+			*/
+			background: -webkit-linear-gradient(45deg,red 20%,green 60%,blue);
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

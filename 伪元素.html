@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box::before{
+			content: '小明';
+			color: red;
+			font-size: 20px;
+			width: 100px;
+			display: block;
+			border: 1px solid #000;
+		}
+		.box2::before{
+			width: 300px;
+		}
+		.box::after{
+			content: '18';
+		}
+	</style>
+</head>
+<body>
+	<!-- 伪元素默认是行内元素，我们可以进行转化，在实际工作中，多用来模拟一些小的标签去装饰 -->
+	<div class="box">的年龄为</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			console.log($('.box::before'));
+            
+			$('.box').click(function(event) {
+				$(this).addClass('box2');
+			});
+		})
+	</script>
+</body>
+</html>

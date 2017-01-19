@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: yellowgreen;
+			margin: 10px auto;
+		}
+		div:nth-child(2){
+			padding: 10px;
+		}
+		div:nth-child(3){
+			padding: 10px;
+			border: 10px solid hotpink;
+		}
+		div:nth-child(4){
+			padding: 10px;
+			border: 10px solid hotpink;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<!-- 一个盒子真正的实际宽度包括 Border + padding + width   
+		在css3中，可以借助于border-sizing去实现盒子自动内减，有两个值 
+		broder-box 
+		content-box
+
+		broder-box 内减掉边框和padding
+		content-box 是默认值 该是多少就是多少
+	-->
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+	<div>10</div>
+
+</body>
+</html>

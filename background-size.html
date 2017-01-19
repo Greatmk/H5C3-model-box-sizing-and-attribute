@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 800px;
+			height: 800px;
+			border: 10px dashed #000;
+			background:  url(image/Aatrox_1.jpg) 0 0 no-repeat;
+			/* 一个值的情况下，宽度会进行拉伸，高度会保持等比例 */
+			/* 两个值的情况下，宽度和高度都会拉伸，可能会产生变形 */
+			/* 可以接受百分比  百分比参照的是盒子的宽和高 */
+			/* contain 当图片的宽度或者是高度有一个达到了最大值，整体停止缩放 可能会带来留白呀*/
+			/* cover 在contain的基础上，保持不留白，继续放大，知道另外一个边也得到最大值 */
+			background-size:cover;
+
+			/* 预告： background-size会在自适应页面里面用到，在全屏轮播图里面用到 */
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

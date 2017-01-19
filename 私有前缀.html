@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/* 
+	作用：兼容低版本的一些高级浏览器，或者一些特定的css3属性需要添加私有前缀才起作用
+	每一条css3属性合理来说都需要添加对应浏览器的前缀，以保证其兼容性
+	谷歌 苹果：-webkit- 
+	火狐：-moz-
+	IE：-ms-
+	o：-o-
+	小细节：在手机端，一般来说只需要写一个-webkit-（针对国内的绝大部分手机端）
+	添加的位置：大部分都是直接添加到最前面，css2没有的属性都是添加在最前面的，有一些是css2就有的属性是添加在后面的（background：-webkit-linear-gradient（））
+	 */
+		div{
+			border-radius: 10px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

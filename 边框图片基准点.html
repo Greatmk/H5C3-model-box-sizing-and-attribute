@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 800px;
+			height: 800px;
+			border: 10px dashed #000;
+			background:  url(image/heihei.jpg) 0 0 no-repeat;
+			 /* padding-box  默认取值，从padding的起始点开始平铺 padding的大小不会产生影响*/
+			/*  border-box 从border的起始点开始平铺 border的大小不会产生影响 */
+			/* content-box 从内容的起始点开始平铺，会留出padding的位置 */
+			background-origin: content-box;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			margin: 10px auto;
+		}
+		/* 第一个值 ：Npx  阴影向水平方向偏移N个像素  正数往右 负数往左 */
+		div:nth-child(1){
+			box-shadow: -10px 0;
+		}
+		/* 第二个值 ：Npx  阴影向垂直方向偏移N个像素  正数往下 负数往上 */
+		div:nth-child(2){
+			box-shadow: 0px -10px;
+		}
+		
+		div:nth-child(3){
+			box-shadow: 10px 10px;
+		}
+		/* 第三个值 ：羽化大小 （模糊的大小） */
+		div:nth-child(4){
+			box-shadow: 10px 10px 50px;
+		}
+		/* 第四个值 ：阴影尺寸 */
+		div:nth-child(5){
+			box-shadow: 0px 0px 10px 5px;
+		}
+		/* 第五个值 ：颜色 默认值是黑色 */
+		div:nth-child(6){
+			box-shadow: 0px 0px 10px 5px rgba(100,100,100,0.5);
+		}
+		/* 第六个值 内外阴影 默认是外阴影 内阴影是inset */
+		div:nth-child(7){
+			box-shadow: 0px 0px 10px 5px red inset;
+		}
+		/* 阴影可以写多组 用逗号隔开*/
+		div:nth-child(8){
+			box-shadow: 0px 0px 10px 5px red inset,5px 5px 5px 5px pink,10px 10px 5px 5px blue;
+		}
+		div:nth-child(9){
+			box-shadow: 5px 5px red;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
